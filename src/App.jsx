@@ -2,12 +2,12 @@
 import "./styles/App.css";
 
 // components
-import CreateVolumeOfAlcohol from "./components/AlcoholVolume/CreateVolumeOfAlcohol";
+import DiluteAlcohol from "./components/AlcoholVolume/DiluteAlcohol";
 
 function App() {
   return (
     <>
-      <CreateVolumeOfAlcohol />
+      <DiluteAlcohol />
     </>
   );
 }
