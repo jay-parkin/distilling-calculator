@@ -1,15 +1,16 @@
 /* General container styling */
 .container {
-    width: 100%;
-    margin: 50px auto;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px;
     padding: 20px;
     background-color: #f9f9f9;
-    /* Light gray background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Soft shadow */
     font-family: "Arial", sans-serif;
     color: #333;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -18,7 +19,6 @@
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #4caf50;
-    /* Green for the header */
 }
 
 /* Input group styling */
@@ -46,10 +46,8 @@
 
 .input-group input:focus {
     border-color: #4caf50;
-    /* Focus border color matches header */
     outline: none;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
-    /* Subtle glow */
 }
 
 /* Result display */
@@ -64,6 +62,7 @@
     color: #333;
     font-weight: bold;
     text-align: center;
+    word-wrap: break-word;
 }
 
 /* Buttons styling */
@@ -84,13 +83,11 @@
 
 .buttons button:first-child {
     background-color: #4caf50;
-    /* Green for calculate */
     color: #fff;
 }
 
 .buttons button:last-child {
     background-color: #f44336;
-    /* Red for clear */
     color: #fff;
 }
 
@@ -104,12 +101,10 @@
 
 .buttons button:first-child:hover {
     background-color: #45a049;
-    /* Slightly darker green */
 }
 
 .buttons button:last-child:hover {
     background-color: #d32f2f;
-    /* Slightly darker red */
 }
 
 /* Responsive design */
@@ -126,4 +121,11 @@
     .buttons button {
         width: 100%;
     }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 10px;
+    }
+
 }
