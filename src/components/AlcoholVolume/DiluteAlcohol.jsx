@@ -110,8 +110,9 @@ const DiluteAlcohol = () => {
 
       {/* Buttons for calculation and clearing */}
       <div className="buttons">
-        <button onClick={handleCalculate}>Calculate</button>
         <button onClick={handleClear}>Clear</button>
+        <button onClick={handleCalculate}>Calculate</button>
+
       </div>
     </div>
   );
