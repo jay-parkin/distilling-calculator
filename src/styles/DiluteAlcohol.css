@@ -1,0 +1,129 @@
+/* General container styling */
+.container {
+    min-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    font-family: "Arial", sans-serif;
+    color: #333;
+}
+
+/* Header */
+.container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4caf50;
+    /* Green for the header */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #4caf50;
+    /* Focus border color matches header */
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    /* Subtle glow */
+}
+
+/* Result display */
+.result {
+    background-color: #e8f5e9;
+    /* Light green background */
+    border-left: 5px solid #4caf50;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Buttons styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button:first-child {
+    background-color: #4caf50;
+    /* Green for calculate */
+    color: #fff;
+}
+
+.buttons button:last-child {
+    background-color: #f44336;
+    /* Red for clear */
+    color: #fff;
+}
+
+.buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.buttons button:active {
+    transform: translateY(1px);
+}
+
+.buttons button:first-child:hover {
+    background-color: #45a049;
+    /* Slightly darker green */
+}
+
+.buttons button:last-child:hover {
+    background-color: #d32f2f;
+    /* Slightly darker red */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "../../styles/DiluteAlcohol.css";
+
 const DiluteAlcohol = () => {
   const [litresDiluted, setlitresDiluted] = useState("");
   const [alcContent, setAlcContent] = useState("");
@@ -63,7 +65,7 @@ const DiluteAlcohol = () => {
 
       {/* Input for litres to Dilute */}
       <div className="input-group">
-        <label>litres to Dilute:</label>
+        <label>Litres to Dilute:</label>
         <input
           type="number"
           value={litresDiluted}
